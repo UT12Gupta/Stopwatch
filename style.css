@@ -1,0 +1,96 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    }
+    body {
+        padding: 0;
+        margin: 0;
+        font-family: verdana;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background: rgb(255,253,254);
+        background: radial-gradient(circle, rgba(255,253,254,1) 0%, rgba(0,0,0,1) 100%);       
+    }
+    
+     h1 {
+        color: rgb(255, 0, 0);
+        text-align: center;
+        font-size: 150px;
+        font-style: italic;
+        
+    }
+
+    h3{
+        color:#c96055;
+        text-align: center;
+    }
+    
+    .digit {
+        font-size: 150px;
+        color: #f2a3a3;
+    }
+    
+    .txt {
+        font-size: 30px;
+        color: #626155;
+    }
+    
+    #buttons {
+        margin-top: 50px;
+        padding:10px;
+        margin-left:15rem;
+
+    }
+    
+    .btn {
+        width: 100px;
+        padding: 10px 15px;
+        margin: 0px 20px;
+        border-top-right-radius: 14px;
+        border-bottom-left-radius: 14px;
+        border-bottom-right-radius: 14px;
+        border-top-left-radius: 14px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: 0.5s;
+        color: white;
+        font-weight: 500;
+        animation-name: shine;
+        animation-duration:4s;
+        animation-iteration-count: infinite;
+    }
+    .btn:hover{
+        transform: scale(1.5);
+    }
+    
+@keyframes shine
+{
+0%,100%{
+    btn-shadow: 0px 0px 32px -12px rgba(246,180,0);
+}
+ 50%{
+    btn-shadow: 0px 0px 32px 3px rgba(246,180,0,.5);
+ }
+}
+
+
+    #start {
+        background-color: #2b0117;
+    }
+    
+    #stop {
+        background-color: #021930;
+    }
+    
+    #reset {
+        background-color: #c1aba8;
+    }
+    
